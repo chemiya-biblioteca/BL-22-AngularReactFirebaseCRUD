@@ -9,7 +9,7 @@ import { PlacesService } from 'src/app/services/places.service';
 })
 export class PlaceListComponent implements OnInit {
 
-  places: Place[];
+  places: Place[];//array para alamcenar todo
 
   constructor(
     private placesService: PlacesService
@@ -20,18 +20,18 @@ export class PlaceListComponent implements OnInit {
       latitude: 40,
       longitude: -3
      
-    }];
+    }];//creo uno vacio
   }
 
   ngOnInit(): void {
     this.placesService.getPlaces().subscribe(places => {
       this.places = places;
-    })
+    })//busco todos del servicio y los guardo
   }
 
   async onClickDelete(place: Place) {
     const response = await this.placesService.deletePlace(place);
     console.log(response);
-  }
+  }//le digo al servicio que lo borre
 
 }

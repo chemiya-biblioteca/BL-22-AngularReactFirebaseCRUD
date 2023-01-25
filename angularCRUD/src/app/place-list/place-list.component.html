@@ -1,11 +1,11 @@
 <div class="places">
-    <div class="place" *ngFor="let place of places">
+    <div class="place" *ngFor="let place of places"><!--recorro el array y por cado uno lo muestro-->
         <div class="image" ></div>
-        <div class="info">
+        <div class="info"><!--muestros los atributos del objeto-->
             <h4>{{place.name}}</h4>
             <p>{{place.description}}</p>
             <p>Coordenadas: {{place.latitude}} / {{place.longitude}}</p>
             <button class="btn btn-outline-danger" (click)="onClickDelete(place)" >Borrar</button>
-        </div>
+        </div><!--manejo evento del boton y le paso el evento-->
     </div>
 </div>

@@ -5,4 +5,4 @@ export default interface Place {
     longitude: number;
     description: string;
    
-}
+}//clase para un lugar

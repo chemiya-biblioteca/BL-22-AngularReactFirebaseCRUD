@@ -9,7 +9,7 @@ import { PlacesService } from 'src/app/services/places.service';
 })
 export class NewPlaceComponent implements OnInit {
 
-  formulario: FormGroup;
+  formulario: FormGroup;//creo formualrio
 
   constructor(
     private placesService: PlacesService
@@ -20,13 +20,13 @@ export class NewPlaceComponent implements OnInit {
       longitude: new FormControl(),
       description: new FormControl(),
      
-    })
+    })//creo campos del formulario
   }
 
   ngOnInit(): void {
   }
 
-  async onSubmit() {
+  async onSubmit() {//cuando se suba digo al servicio que lo guarde los valores del formualrio
     console.log(this.formulario.value)
     const response = await this.placesService.addPlace(this.formulario.value);
     console.log(response);
