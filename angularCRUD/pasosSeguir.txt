@@ -1,0 +1,20 @@
+nuevos pasos:
+creamos proyecto angular
+creamos proyecto firebase
+creamos firestore database en modo de prueba
+comandos firebase login 
+firebase projects:list
+firebase init
+seleccionamos firestore
+seleccionamos Proyecto
+si sale error de que no tiene database: ir a ajustes en firebase y volver a poner la ubicación predeterminada de gcp
+crear en visual studio code en el archivo de angular /src/environments/environment.ts y enironment.prod.ts
+en enviroment.ts poner:
+export const environment = {
+  production: false
+};
+ng add @angular/fire
+marcamos solo firestore
+elegimos el proyecto
+creamos nueva aplicación
+poner en reglas de firebase if true si no funciona

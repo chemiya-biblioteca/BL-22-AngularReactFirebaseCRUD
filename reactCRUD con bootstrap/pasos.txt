@@ -1,0 +1,11 @@
+crear proyecto en firebase
+damos en el icono de </>
+npm install firebase
+creamos firebase-config.js  y pegamos lo de las claves
+quitamos anaylitys e importamos firestore
+vamos a firestore database
+create database en test mode
+crear collecion y creamosuna instacia
+npm install react-bootstrap bootstrap
+en el index.js
+import 'bootstrap/dist/css/bootstrap.min.css';
